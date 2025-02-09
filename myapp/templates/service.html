@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Service</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-       
-          <h1>{{title}}</h1>
-          <p>{{description}}</p>
-         {# <p>{{services}}</p>#}
-       
-        
-        <script src="" async defer></script>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Service</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <h1>{{title|lower}}</h1>
+    <p>{{description|upper}}</p>
+    <p>{{description|capfirst}}</p>
+    <p>{{description|wordcount}}</p>
+    {#<p>{{services}}</p>#}
+    <h1>{{number|floatformat:2}}</h1>
+    <h1>{{number|add:2}}</h1>
+    <h1>{{number|divisibleby:2}}</h1>
+    <p>{{services}}</p>
+    <p>{{services|length}}</p>
+    <p>{{services|first}}</p>
+    <p>{{services|last}}</p>
+    <p>{{services|join:", "}}</p>
+    <p>{{services|slice:2}}</p>
+    <p>{{services|slice:"2:3:"}}</p>
+
+    <script src="" async defer></script>
+  </body>
 </html>
